@@ -149,7 +149,6 @@ Register the new strategy in the respective factory and it's ready to use — ze
 
 ## 🛣️ Potential Enhancements
 
-- [ ] Unpark vehicle and calculate fee
 - [ ] Concurrent access handling (thread safety)
 - [ ] Persistence layer (database integration)
 - [ ] REST API layer (Spring Boot)
