@@ -13,9 +13,17 @@ import java.util.Map;
 
 public class ParkingSystemManager {
 
-
-
+    private ParkingSystemManager instance;
+    private ParkingSystemManager(){};
+    public ParkingSystemManager getInstance(){
+        if(instance==null){
+            instance=new ParkingSystemManager();
+            return instance;
+        }
+        return instance;
+    }
     ParkingService parkingService;
+
 
     public ParkingSystemManager(ParkingService parkingService){
         this.parkingService=parkingService;
