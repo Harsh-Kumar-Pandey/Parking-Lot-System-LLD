@@ -52,12 +52,13 @@ src/main/java/org/example/
 
 ## 🧩 Design Patterns Used
 
-| Pattern | Where |
-|---|---|
-| **Strategy** | `ParkingStrategy`, `PricingStrategy` — interchangeable algorithms |
-| **Factory** | `ParkingStrategyFactory`, `PriceStrategyFactory` — object creation |
-| **Facade** | `ParkingSystemManager` — single interface over complex subsystems |
-| **Dependency Injection** | `ParkingSystemManager` takes `ParkingService` via constructor |
+| Pattern                  | Where                                                            |
+|--------------------------|------------------------------------------------------------------|
+| **Strategy**             | `ParkingStrategy`, `PricingStrategy` — interchangeable algorithms |
+| **Factory**              | `ParkingStrategyFactory`, `PriceStrategyFactory` — object creation |
+| **Facade**               | `ParkingSystemManager` — single interface over complex subsystems |
+| **Singleton**            | `ParkingSystemManager` is instanciated only once                 |
+| **Dependency Injection** | `ParkingSystemManager` takes `ParkingService` via constructor    |
 
 ---
 
